@@ -21,3 +21,5 @@ function howManyPizzas(n) {
   let slices = (pizzas % 1) * 8
   return `pizzas: ${Math.floor(pizzas)}, slices: ${Math.round(slices)}`
 }
+
+// or
