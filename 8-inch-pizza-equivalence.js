@@ -15,3 +15,9 @@ how_many_pizzas(0) -> "pizzas: 0, slices: 0"
 
 
 // Solution
+
+function howManyPizzas(n) {
+  let pizzas = (n / 8) ** 2
+  let slices = (pizzas % 1) * 8
+  return `pizzas: ${Math.floor(pizzas)}, slices: ${Math.round(slices)}`
+}
