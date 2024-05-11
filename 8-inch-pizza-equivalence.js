@@ -23,3 +23,16 @@ function howManyPizzas(n) {
 }
 
 // or
+
+function howManyPizzas(n) {
+
+	const areaOfOriginalPizza = Math.PI*(4) ** 2
+	const areaOfComparingPizza = Math.PI*(n/2)**2;
+
+	const divider = Number.parseFloat(areaOfComparingPizza/areaOfOriginalPizza).toFixed(1);
+
+	const pizzas = Math.floor(divider);
+	const slices = Math.round((divider-pizzas) * 8);
+
+	return `pizzas: ${pizzas}, slices: ${slices}`;
+}
